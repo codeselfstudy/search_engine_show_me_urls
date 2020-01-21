@@ -1,5 +1,5 @@
 // prevent adding the links multiple times
-var addedLinks = document.querySelector(".show-me-urls");
+const addedLinks = document.querySelector(".show-me-urls");
 if (!addedLinks) {
     fixGoogle();
 }
