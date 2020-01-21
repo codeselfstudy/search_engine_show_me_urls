@@ -42,7 +42,6 @@ function isImg(el) {
  */
 function createLink(el) {
     const template = document.createElement("template");
-    // const styles = "background-color: #fffbd6; font-size: 1.17 rem";
     const styles = "color: #2c8734 !important; font-size: 1.17rem;";
     const html = `
         <div>
