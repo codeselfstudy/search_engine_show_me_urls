@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "search_engine_show_me_urls",
+    "short_name": "show me urls",
+    "description": "Shows URLs in Google's search engine results.",
+    "version": "0.1.0",
+    "icons": {
+        "64": "src/icons/icon.png"
+    },
+    "permissions": ["https://www.google.com/search*"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com/search*"],
+            "js": ["src/content_script.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
