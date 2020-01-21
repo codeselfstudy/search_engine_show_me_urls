@@ -16,7 +16,9 @@ function fixGoogle() {
             // remove internal links
             !el.href.match(/www\.google\.com\/(url|search)/) &&
             // don't append URLs to images
-            !isImg(el)
+            !isImg(el) &&
+            // and is not a Google Translate link
+            !el.innerText.trim().match(/Translate this page/i)
         ) {
             const a = createLink(el);
             el.parentNode.insertBefore(a, el.nextSibling);

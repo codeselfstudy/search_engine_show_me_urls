@@ -3,7 +3,7 @@
     "name": "Search Engines: Show Me URLs!",
     "short_name": "Show Me URLs",
     "description": "Shows URLs in Google's search engine results.",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "icons": {
         "64": "src/icons/icon.png"
     },
