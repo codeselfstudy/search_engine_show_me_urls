@@ -14,7 +14,7 @@ function fixGoogle() {
             // remove empty elements
             el.innerText.trim() &&
             // remove internal links
-            !el.href.match(/google\.com/) &&
+            !el.href.match(/www\.google\.com\/url/) &&
             // don't append URLs to images
             !isImg(el)
         ) {

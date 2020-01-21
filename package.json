@@ -1,6 +1,6 @@
 {
     "name": "@codeselfstudy/search_engine_show_me_urls",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Show URLs on Google's search results pages",
     "scripts": {
         "start": "npx web-ext run -i \"tags\"",

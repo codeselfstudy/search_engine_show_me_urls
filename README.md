@@ -7,3 +7,7 @@ This browser extension brings URLs back to Google's search results pages so that
 ## Development
 
 See the `package.json` file. Run `npm start` to launch it in a browser with live-reload.
+
+### Versions
+
+Update the version in `package.json` and `manifest.json` when releasing a new version.
