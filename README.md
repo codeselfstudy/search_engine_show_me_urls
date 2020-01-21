@@ -4,6 +4,13 @@ Google stopped showing URLs in the search engine results, making it difficult to
 
 This browser extension brings URLs back to Google's search results pages so that you can safely see where you're going.
 
+![Screenshot](./screenshots/screenshot-firefox-store.png)
+
+## Download
+
+- [Firefox Version](https://addons.mozilla.org/en-US/firefox/addon/search-engines-show-me-urls/)
+- Chrome Version -- Google rejected it from the Google Chrome extension store as "spam". Hopefully, it will be online there soon.
+
 ## Development
 
 See the `package.json` file. Run `npm start` to launch it in a browser with live-reload.
