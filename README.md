@@ -11,3 +11,15 @@ See the `package.json` file. Run `npm start` to launch it in a browser with live
 ### Versions
 
 Update the version in `package.json` and `manifest.json` when releasing a new version.
+
+Also tag the version before publishing:
+
+```text
+$ git tag -a v0.1.3
+```
+
+This will create a new release on Github:
+
+```text
+$ git push origin master --tags
+```
