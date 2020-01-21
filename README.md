@@ -8,7 +8,7 @@ This browser extension brings URLs back to Google's search results pages so that
 
 See the `package.json` file. Run `npm start` to launch it in a browser with live-reload.
 
-### Versions
+## Releases
 
 Update the version in `package.json` and `manifest.json` when releasing a new version.
 
@@ -22,4 +22,10 @@ This will create a new release on Github:
 
 ```text
 $ git push origin master --tags
+```
+
+This will build the extension for both Firefox and Chrome:
+
+```text
+$ npm run build
 ```
