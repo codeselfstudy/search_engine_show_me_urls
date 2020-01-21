@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
-    "name": "search_engine_show_me_urls",
-    "short_name": "show me urls",
+    "name": "Search Engines: Show Me URLs!",
+    "short_name": "Show Me URLs",
     "description": "Shows URLs in Google's search engine results.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "icons": {
         "64": "src/icons/icon.png"
     },
