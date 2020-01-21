@@ -41,13 +41,14 @@ function isImg(el) {
  * Create a link to display on the page.
  */
 function createLink(el) {
-    const div = document.createElement("div");
-    div.classList.add("show-me-urls");
-    const a = document.createElement("a");
-    a.href = el.href;
-    a.innerText = el.href;
-    div.appendChild(a);
-    a.style.backgroundColor = "#fffbd6";
-    a.style.fontSize = "1.17rem";
-    return div;
+    const template = document.createElement("template");
+    // const styles = "background-color: #fffbd6; font-size: 1.17 rem";
+    const styles = "color: #2c8734 !important; font-size: 1.17rem;";
+    const html = `
+        <div>
+            <a href="${el.href}" class="show-me-urls" style="${styles}">${el.href}</a>
+        </div>
+    `.trim();
+    template.innerHTML = html;
+    return template.content.firstChild;
 }
