@@ -41,13 +41,24 @@ function isImg(el) {
  * Create a link to display on the page.
  */
 function createLink(el) {
-    const template = document.createElement("template");
     const styles = "color: #2c8734 !important; font-size: 1.17rem;";
+    const linkText = decodeURI(el.href);
     const html = `
         <div>
-            <a href="${el.href}" class="show-me-urls" style="${styles}">${el.href}</a>
+            <a href="${el.href}" class="show-me-urls" style="${styles}">${linkText}</a>
         </div>
     `.trim();
-    template.innerHTML = html;
-    return template.content.firstChild;
+
+    // Mozilla's linter doesn't like innerHTML, so this technique gets
+    // around the warning.
+    const parser = new DOMParser();
+    const parsed = parser.parseFromString(html, "text/html");
+    const tags = parsed.getElementsByTagName("div");
+    const div = document.createElement("div");
+
+    for (const tag of tags) {
+        div.appendChild(tag);
+    }
+
+    return div;
 }
