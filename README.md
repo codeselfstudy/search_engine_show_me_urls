@@ -9,7 +9,7 @@ This browser extension brings URLs back to Google's search results pages so that
 ## Download
 
 - [Firefox Version](https://addons.mozilla.org/en-US/firefox/addon/search-engines-show-me-urls/)
-- Chrome Version -- Google rejected it from the Google Chrome extension store as "spam". Hopefully, it will be online there soon.
+- [Chrome Version](https://chrome.google.com/webstore/detail/search-engines-show-me-ur/kpbknblfaapeiojhnollgekmaembmajl)
 
 ## Development
 
