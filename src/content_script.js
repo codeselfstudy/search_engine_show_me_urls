@@ -44,7 +44,7 @@ function isImg(el) {
  */
 function createLink(el) {
     const styles = "color: #2c8734 !important; font-size: 1.17rem;";
-    const linkText = decodeURI(el.href);
+    const linkText = decodeURIComponent(el.href);
     const html = `
         <div>
             <a href="${el.href}" class="show-me-urls" style="${styles}">${linkText}</a>
