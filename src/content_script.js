@@ -18,7 +18,9 @@ function fixGoogle() {
             // don't append URLs to images
             !isImg(el) &&
             // and is not a Google Translate link
-            !el.innerText.match(/translate this page/i)
+            !el.innerText.match(/translate this page/i) &&
+            // and blocks stacked links
+            !el.closest(".s")
         ) {
             const a = createLink(el);
             el.parentNode.insertBefore(a, el.nextSibling);
